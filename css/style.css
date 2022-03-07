@@ -28,6 +28,9 @@ body{
 .right{
     float:right;
 }
+.flex-container{
+    display: flex;
+}
 /* aside */
 aside{
     width: 200px;
@@ -126,4 +129,35 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+}
+/* Inizio content box */
+.content-box.flex-container{
+    width:100%;
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.box{
+    width: calc((100% - 50px) / 6);
+}
+h2{
+    font-size: 20px;
+    width: 100%;
+    font-weight: 800;
+}
+.box img {
+    width: 100%;
+    padding-top: 20px;
+}
+.name{
+    text-align: center;
+    font-size: 12px;
+}
+.name p {
+    padding-top: 10px;
+    color: #73767b;
+    font-weight: bold;
+}
+h3{
+    padding-top: 10px;
 }
