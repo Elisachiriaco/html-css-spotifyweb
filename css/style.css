@@ -16,11 +16,45 @@ body{
     height: calc(100% - 90px);
     display: flex;
 }
+/* aside */
 aside{
-    width: 230px;
+    width: 200px;
+    background-color: #000000;
 }
+.logo svg{
+    width:75%;
+    padding: 15px;
+}
+.home svg{
+    width: 20%;
+}
+.list-item{
+    width:90%;
+    padding:5px 10px;
+}
+ul{
+    list-style-type: none;
+}
+.list-item li{
+    padding-top: 10px;
+    color: rgba(163,163,163,255);
+}
+.list-item li svg{
+    width: 30%;
+    height: 30px;
+    vertical-align: middle;
+    color: rgba(163,163,163,255);
+}
+.list-item .text{
+    font-weight: 900;
+}
+.playlist{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+/* main */
 main{
-    width: calc(100% - 230px);
+    width: calc(100% - 200px);
     height: 100%;
 }
 nav.top{
