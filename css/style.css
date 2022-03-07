@@ -106,6 +106,7 @@ nav.top{
     overflow: auto;
     width: 100%;
     padding-top: 90px;
+    padding-bottom: 90px;
 }
 /* nav center */
 .center{
@@ -141,6 +142,7 @@ footer{
     width: calc((100% - 50px) / 6);
 }
 h2{
+    padding-top: 10px;
     font-size: 20px;
     width: 100%;
     font-weight: 800;
@@ -153,11 +155,16 @@ h2{
     text-align: center;
     font-size: 12px;
 }
-.name p {
-    padding-top: 10px;
+p {
+    padding-top: 5px;
     color: #73767b;
     font-weight: bold;
+    font-size: 10px;
+    width: 100%;
 }
 h3{
     padding-top: 10px;
+}
+.radius{
+    border-radius:100%;
 }
