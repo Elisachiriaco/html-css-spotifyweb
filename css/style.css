@@ -123,14 +123,6 @@ nav.top{
     color: rgba(163,163,163,255);
     padding-left:20px;
 }
-footer{
-    height: 90px;
-    width: 100%;
-    background-color: #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-}
 /* Inizio content box */
 .content-box.flex-container{
     width:100%;
@@ -140,6 +132,7 @@ footer{
 }
 .box{
     width: calc((100% - 50px) / 6);
+    min-width: 150px;
 }
 h2{
     padding-top: 10px;
@@ -167,4 +160,23 @@ h3{
 }
 .radius{
     border-radius:100%;
+}
+/* footer */
+footer{
+    height: 90px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding:20px 10px;
+}
+.player-barleft.flex-container{
+    gap: 10px;
+}
+.player-barleft img{
+    width:4%;
+}
+.icon.flex-container{
+    justify-content: center;
 }
