@@ -25,9 +25,6 @@ body{
 .left{
     float: left;
 }
-.right{
-    float:right;
-}
 .flex{
     display: flex;
     flex-flow: row wrap;
@@ -44,10 +41,13 @@ aside{
     justify-content: space-between;
 }
 #logo{
-    width: 75%;
+    width:75%;
 }
 #logo img{
     padding: 10px;
+}
+#logo .logosmall{
+    display: none;
 }
 h4{
     color: white;
@@ -63,7 +63,7 @@ ul.menu.flex{
     font-size: 20px;
 }
 
-aside ul li:hover{
+aside ul i:hover{
     font-size: 15px;
     transition: 1s;
     border-left: 3px solid green;
@@ -88,6 +88,11 @@ aside li a{
 ul.playlist.flex{
     align-items: center;
     row-gap: 10px;
+}
+.playlist{
+    width: 125%;
+    height: 50%;
+    overflow-y: auto;
 }
 ul.playlist.flex i{
     padding-left: 10px;
@@ -115,7 +120,7 @@ ul.playlist.flex i{
 aside ul:last-child li:first-child{
     padding-bottom: 10px;
 }
-li img{
+.profile{
     background-color: grey;
     border-radius: 50%;
     height: 30px;
@@ -146,6 +151,9 @@ li:hover .greenline{
 }
 .left li a:hover{
     color: white;
+}
+.playlist li{
+    height: 15px;
 }
 
 /* main */
@@ -190,6 +198,7 @@ nav.top{
 }
 /* nav center */
 .center{
+    width: 100%;
     padding: 15px 210px;
     height: 40px;
 }
@@ -233,6 +242,7 @@ nav.top{
     cursor: pointer;
     opacity: 1;
 }
+
 h2{
     padding-top: 10px;
     font-size: 20px;
@@ -258,8 +268,9 @@ h3{
     padding-top: 10px;
 }
 .radius{
-    border-radius:50%;
+    border-radius: 50%;
 }
+
 /* footer */
 footer{
     height: 90px;
@@ -268,6 +279,7 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
+    min-width:576px;
 }
 /* player left */
 .player-barleft.flex-container{
@@ -385,6 +397,46 @@ i:hover{
     color: white;
     font-size: 18px;
     transition: 1s;
+}
+
+/* Media query */
+@media screen and (max-width: 992px) {
+    nav.center{
+        display:inline;
+        margin-left: 80px;
+    }
+    .player-barleft{
+        gap: 2px;
+    }
+}
+@media screen and (max-width: 576px) {
+    aside{
+        align-items: center;
+        width: 50px;
+    } 
+    main{
+        width:calc(100% - 50px);
+    }
+    
+    #logo img{
+        display: none;  
+    }
+    #logo .logosmall{
+        display: block;
+        width:45px;
+    }
+    aside a,span,.line,.playlist,h4{
+        display: none;
+    }
+    aside ul li{
+        padding: 0;
+    }
+    .menu.flex{
+        align-items: center;
+    }
+    aside ul:last-child li{
+        text-align: center;
+    }
 }
 
 
