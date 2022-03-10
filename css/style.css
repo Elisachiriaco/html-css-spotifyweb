@@ -344,6 +344,7 @@ footer{
       background: #d3d3d3;
       outline: none;
       opacity: 0.7;
+      border-radius: 20px;
       }
       
       .liner::-webkit-slider-thumb {
@@ -374,6 +375,7 @@ footer{
       background: #d3d3d3;
       outline: none;
       opacity: 0.7;
+      border-radius: 20px;
       }
       .slide::-webkit-slider-thumb {
         -webkit-appearance: none;
