@@ -222,7 +222,7 @@ nav.top{
     gap: 10px;
 }
 .box{
-    width: calc((100% - 50px) / 6);
+    width: calc((100% - 80px) / 6);
     min-width: 150px;
 }
 .boxhover{
@@ -286,6 +286,7 @@ footer{
     bottom: 0;
     left: 0;
     min-width:576px;
+    overflow-x: auto;
 }
 /* player left */
 .player-barleft{
