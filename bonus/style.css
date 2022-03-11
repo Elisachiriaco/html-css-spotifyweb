@@ -169,6 +169,24 @@ nav.top{
     z-index:1000;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.music{
+    font-size: 30px;
+    position: absolute;
+    top: 28%;
+    left: 5%;
+}
+.music .fa-circle-play{
+    font-size: 40px;
+    vertical-align: middle;
+    color:#1db954;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+   
+}
+.music .fa-circle-play:hover{
+    font-size: 45px;
+}
 .btn{
     font-size:12px;
     display: inline-block;
@@ -240,19 +258,26 @@ h1{
     background-color: rgba(36,36,37,255);
     background-image: linear-gradient(#6b6b6f, black);
 }
+
 .content-box .button{
     margin: 20px 0;
     font-size:30px;
     color: rgba(255, 255, 255, 0,5);
+    height: 50px;
 }
 .content-box i{
     margin-left: 25px;
+    cursor: pointer;
 }
+
 .content-box .fa-circle-play{
     color:#1db954;
     background-color: white;
     border-radius: 50%;
     font-size: 50px;
+}
+.content-box .fa-circle-play:hover{
+    font-size: 53px;
 }
 .button{
     width: 100%;
@@ -283,6 +308,7 @@ ul.flex-container li {
     justify-content: flex-start;
     align-items: center;
     margin: 10px 0;
+    height:70px;
 }
 .album:hover{
     background-color: rgba(221, 221, 221, 0.3);
@@ -301,6 +327,7 @@ ul.flex-container li {
 .songs  img{
    width: 100%;
    border-radius: 5px;
+   min-width:70px;
 }
 .songs{
     flex: 0 0 25%;
@@ -331,6 +358,10 @@ ul.flex-container li {
     flex: 0 1 50%;
     font-size: 12px;
 }
+i:hover{
+    font-size: 15px;
+}
+
 
 
 /* footer */
